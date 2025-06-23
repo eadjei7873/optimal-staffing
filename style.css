@@ -1,4 +1,4 @@
-/* Reset and base styling */
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -8,47 +8,48 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
+  line-height: 1.6;
 }
 
-/* Header with banner and logo */
-.header-section {
+/* Header with Banner and Logo */
+header {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .banner {
   width: 100%;
-  height: auto;
-  max-height: 350px;
+  max-height: 300px;
   object-fit: cover;
-}
-
-.logo-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: white;
-  padding: 8px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: block;
 }
 
 .logo {
   width: 120px;
   height: auto;
+  margin: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 2;
 }
 
 /* Welcome Section */
 .intro {
-  text-align: center;
+  background-color: #fff;
   padding: 40px 20px;
-  background-color: #ffffff;
-  color: #333;
+  text-align: center;
 }
 
 .intro h1 {
   font-size: 2.2em;
   margin-bottom: 10px;
+  color: #222;
 }
 
 .intro p {
@@ -56,21 +57,22 @@ body {
   color: #555;
 }
 
-/* Image gallery */
+/* Featured Images Section */
 .featured-images {
+  background-color: #fff;
+  padding: 30px 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 30px 20px;
-  background-color: #ffffff;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .featured-images img {
   width: 100%;
   max-width: 480px;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  height: auto;
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
