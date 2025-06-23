@@ -1,17 +1,17 @@
-/* Base styles */
-body {
+/* Reset and base styling */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  background: #f4f4f4;
 }
 
-/* Banner and logo */
-header {
-  position: relative;
-  width: 100%;
-}
-
-.banner-container {
+/* Header with banner and logo */
+.header-section {
   position: relative;
   width: 100%;
 }
@@ -19,50 +19,58 @@ header {
 .banner {
   width: 100%;
   height: auto;
-  display: block;
+  max-height: 350px;
+  object-fit: cover;
 }
 
-.logo {
+.logo-container {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 120px;
-  height: auto;
-  background: white;
-  padding: 5px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Intro section */
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Welcome Section */
 .intro {
   text-align: center;
   padding: 40px 20px;
+  background-color: #ffffff;
+  color: #333;
 }
 
 .intro h1 {
-  font-size: 2em;
-  color: #333;
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
 .intro p {
   font-size: 1.2em;
-  color: #666;
+  color: #555;
 }
 
-/* Featured caregiving images */
+/* Image gallery */
 .featured-images {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 30px 20px;
+  background-color: #ffffff;
   flex-wrap: wrap;
 }
 
 .featured-images img {
-  width: 45%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
+
