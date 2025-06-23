@@ -1,12 +1,68 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+/* Banner and logo */
+header {
+  position: relative;
+  width: 100%;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
 .banner {
-  background: url('images/banner.jpg') no-repeat center center;
-  background-size: cover;
-  height: 300px;              /* Ensure fixed height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: auto;
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro section */
+.intro {
   text-align: center;
-  padding: 1em;
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Featured caregiving images */
+.featured-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.featured-images img {
+  width: 45%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
