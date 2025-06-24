@@ -71,6 +71,22 @@ body {
   gap: 20px;
   flex-wrap: wrap;
 }
+.nav {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #d00000;
+}
 
 .featured-images img {
   width: 100%;
