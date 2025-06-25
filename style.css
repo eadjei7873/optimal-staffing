@@ -93,3 +93,28 @@ body {
   margin: auto;
   background: #fff;
 }
+/* Banner with text overlay */
+.hero {
+  background-image: url('images/banner_smaller.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.banner-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.banner-text p {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
