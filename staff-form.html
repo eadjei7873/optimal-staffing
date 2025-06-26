@@ -11,14 +11,26 @@
       margin: auto;
       padding: 20px;
     }
-    iframe {
-      border: none;
+    .btn {
+      padding: 10px 20px;
+      background: #d33;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #b22;
+    }
+    #mainContent {
+      display: none;
     }
   </style>
   <script>
     window.onload = function() {
       var password = prompt("This page is for authorized staff only. Please enter the password:");
-      if (password !== "optimal2025") {
+      if (password === "optimal2025") {
+        document.getElementById("mainContent").style.display = "block";
+      } else {
         document.body.innerHTML = "<h2 style='text-align:center;color:red;'>Access Denied</h2>";
       }
     };
@@ -32,15 +44,14 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <main class="content">
+  <main id="mainContent" class="content">
     <h1>Staff Access Form</h1>
     <p>You may now download and fill the staff form directly below:</p>
 
     <div style="margin-top: 20px; text-align: center;">
       <a href="files/Optimal_Staffing_Job_Application_FILLABLE_REBUILT_FIXED.pdf" 
          class="btn" 
-         target="_blank" 
-         style="padding: 10px 20px; background: #d33; color: white; text-decoration: none; border-radius: 5px;">
+         target="_blank">
         Download Fillable PDF Form
       </a>
     </div>
