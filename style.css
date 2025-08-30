@@ -16,7 +16,7 @@ body { font-family: Arial, sans-serif; background-color: #f9f9f9; color:#222; }
 
 /* Hero (keep only one .hero block) */
 .hero {
-  background-image: url('images/banner_smaller.jpg');
+  background-image: url('images/banner.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
