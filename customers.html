@@ -6,12 +6,11 @@
   <title>For Clients — Optimal Staffing</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .form-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; max-width:720px; margin: 0 auto; }
-    .form-grid { display:grid; gap:10px; grid-template-columns: 1fr 1fr; }
-    .form-grid label { display:block; font-weight:bold; margin-bottom:4px; }
-    .form-grid input, .form-grid textarea { width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; }
-    .form-grid textarea { grid-column: 1 / -1; min-height: 110px; }
-    @media (max-width:700px){ .form-grid { grid-template-columns:1fr; } }
+    .form-card {
+      background:#fff; border:1px solid #e5e7eb; border-radius:10px;
+      padding:0; max-width:720px; margin: 0 auto;
+    }
+    @media (max-width:700px){ .form-card iframe { height: 1100px; } }
   </style>
 </head>
 <body>
@@ -44,58 +43,24 @@
       <li>Mobility/transfer assistance and fall prevention</li>
       <li>Companionship and transportation to appointments</li>
     </ul>
+
     <h2 style="margin-top:24px;">Request care</h2>
-    
-    <div class="form-card" style="margin-top:10px; padding:0;">
-  <iframe
-    src=<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNoTpgi-NnRNJG0yhH-3q2L1SbokfRSi919kfwjYRVNhgTqQ/viewform?embedded=true" width="640" height="1094" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    width="100%"
-    height="900"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0">
-    Loading…
-  </iframe>
-</div>
 
-    
-
-          
-          <div>
-            <label for="name">Your Name</label>
-            <input id="name" name="Name" required>
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input id="phone" name="Phone" required>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="Email" type="email" required>
-          </div>
-          <div>
-            <label for="city">City</label>
-            <input id="city" name="City">
-          </div>
-          <textarea name="Care Needs" placeholder="Describe care needs and preferred schedule..."></textarea>
-        </div>
-        <p style="margin-top:12px;">
-          <button class="btn" type="submit">Send Request</button>
-        </p>
-      </form>
-
-      <p class="muted" style="margin-top:10px;">
-        Prefer email? <a href="mailto:optimalstaffing01@gmail.com?subject=Care%20Request%20-%20Optimal%20Staffing">optimalstaffing01@gmail.com</a>
-      </p>
+    <!-- Google Form embed ONLY (old email form removed) -->
+    <div class="form-card" style="margin-top:10px;">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfNoTpgi-NnRNJG0yhH-3q2L1SbokfRSi919kfwjYRVNhgTqQ/viewform?embedded=true"
+        width="100%"
+        height="900"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+      </iframe>
     </div>
 
-    <!-- Later, swap in your Google Form embed for Sheets integration:
-    <div class="form-card" style="margin-top:18px; padding:0;">
-      <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
-              width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-    -->
   </main>
 
 </body>
 </html>
+
