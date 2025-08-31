@@ -1,6 +1,124 @@
-<!DOCTYPE html>
-<html><head><title>Our Services</title><link rel="stylesheet" href="style.css"></head><body>
-<header><img src="images/logo.png" alt="Optimal Staffing Logo" height="60"></header>
-<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="apply.html">Apply</a><a href="contact.html">Contact</a></nav>
-<div class="container"><h2>Home Healthcare Services</h2><ul><li>Personal Care & Bathing</li><li>Medication Management</li><li>Meal Preparation & Grocery Help</li><li>Transportation to Appointments</li><li>Alzheimer’s & Dementia Support</li></ul></div>
-<footer>&copy; 2025 Optimal Staffing. All rights reserved.</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — Optimal Staffing</title>
+  <meta name="description" content="Home care services for families in Greater Cincinnati: personal care, companionship, meal prep, housekeeping, transportation, respite, and post-hospital support." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://www.optimalstaffingcare.com/services.html" />
+  <style>
+    /* Page-only tweaks for service layout */
+    .service-grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .service-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; }
+    .service-card h3 { margin-bottom:8px; }
+    .pill { display:inline-block; padding:6px 10px; border-radius:999px; background:#fff; border:1px solid #e5e7eb; font-size:.9rem; margin:4px 6px 0 0; }
+    .faq dt { font-weight:bold; margin-top:14px; }
+    .faq dd { margin:6px 0 10px 0; color:#555; }
+  </style>
+</head>
+<body>
+
+  <div class="logo-center">
+    <img src="images/logo.png" alt="Optimal Staffing Logo" />
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="services.html">Services</a>
+    <a href="customers.html">For Clients</a>
+    <a href="apply.html">Apply</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <div class="banner-text">
+      <h1>Our Home Care Services</h1>
+      <p>Compassionate, reliable support for families across Greater Cincinnati.</p>
+      <p style="margin-top:14px;">
+        <a class="btn" href="customers.html">Request Care</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>What we provide</h2>
+      <div class="service-grid" style="margin-top:12px;">
+        <div class="service-card">
+          <h3>Personal Care (HHA/STNA)</h3>
+          <p>Bathing, grooming, dressing, toileting, incontinence care, transfers, mobility and fall-prevention assistance.</p>
+        </div>
+        <div class="service-card">
+          <h3>Companionship & Homemaker</h3>
+          <p>Conversation, safety supervision, meal prep, light housekeeping, laundry, organization, errands.</p>
+        </div>
+        <div class="service-card">
+          <h3>Medication Reminders</h3>
+          <p>Timely reminders, logging, and escalation to family when doses are missed. (No med administration.)</p>
+        </div>
+        <div class="service-card">
+          <h3>Transportation & Appointments</h3>
+          <p>Escort to appointments, shopping, social visits; assistance in and out of vehicles and buildings.</p>
+        </div>
+        <div class="service-card">
+          <h3>Respite for Family Caregivers</h3>
+          <p>Short-term relief so family can rest, work, or travel while your loved one remains safe at home.</p>
+        </div>
+        <div class="service-card">
+          <h3>Dementia Support</h3>
+          <p>Routine-focused, calming engagement tailored for Alzheimer’s and other dementias.</p>
+        </div>
+        <div class="service-card">
+          <h3>Post-Hospital / Rehab Support</h3>
+          <p>Smooth transition home: safety setup, routines, follow-up appointment support, ADL assistance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:24px;">
+      <h2>Flexible scheduling</h2>
+      <p>Days, evenings, overnights, and weekends available. We’ll build a schedule around your family’s routines.</p>
+      <div style="margin-top:8px;">
+        <span class="pill">Hourly visits</span>
+        <span class="pill">Daily blocks</span>
+        <span class="pill">Overnights</span>
+        <span class="pill">Short-term respite</span>
+        <span class="pill">Ongoing support</span>
+      </div>
+    </section>
+
+    <section style="margin-top:24px;">
+      <h2>How it works</h2>
+      <ol style="padding-left:1.1rem;">
+        <li><strong>Quick call or form:</strong> Tell us your needs (<a href="customers.html">Request Care</a>).</li>
+        <li><strong>Care plan:</strong> We confirm goals, schedule, and caregiver match.</li>
+        <li><strong>Start care:</strong> Your caregiver arrives and we check in regularly.</li>
+      </ol>
+      <div class="highlight-box">
+        We serve <strong>Greater Cincinnati</strong>. Visits by appointment only. No in-office walk-ins.
+      </div>
+    </section>
+
+    <section style="margin-top:24px;">
+      <h2>FAQs</h2>
+      <dl class="faq">
+        <dt>Do you accept Medicaid or insurance?</dt>
+        <dd>Private-pay to start. If you have a waiver or plan, let us know and we’ll discuss options.</dd>
+
+        <dt>Is there a minimum visit length?</dt>
+        <dd>Yes, a standard minimum shift applies and will be confirmed during your assessment.</dd>
+
+        <dt>Can the caregiver drive my family member?</dt>
+        <dd>Yes—transport and escort are available by request. We’ll align on safety and reimbursement policies in advance.</dd>
+      </dl>
+    </section>
+
+    <p style="margin-top:18px;">
+      <a class="btn" href="customers.html">Request Care</a>
+    </p>
+  </main>
+
+</body>
+</html>
