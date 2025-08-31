@@ -1,19 +1,22 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  
-<link rel="canonical" href="https://www.optimalstaffingcare.com/customers.html">
-
-  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>For Clients — Optimal Staffing</title>
+  <meta name="description" content="Home care services for families in Greater Cincinnati: personal care, companionship, meal prep, housekeeping, transportation, respite, and post-hospital support." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://www.optimalstaffingcare.com/customers.html" />
   <style>
-    .form-card {
-      background:#fff; border:1px solid #e5e7eb; border-radius:10px;
-      padding:0; max-width:720px; margin: 0 auto;
-    }
+    /* Page-only layout for services */
+    .service-grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .service-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; }
+    .service-card h3 { margin-bottom:8px; }
+    .pill { display:inline-block; padding:6px 10px; border-radius:999px; background:#fff; border:1px solid #e5e7eb; font-size:.9rem; margin:4px 6px 0 0; }
+    .faq dt { font-weight:bold; margin-top:14px; }
+    .faq dd { margin:6px 0 10px 0; color:#555; }
+    .form-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:0; max-width:900px; margin: 0 auto; }
     @media (max-width:700px){ .form-card iframe { height: 1100px; } }
   </style>
 </head>
@@ -34,37 +37,102 @@
   <header class="hero">
     <div class="banner-text">
       <h1>For Clients & Families</h1>
-      <p>Tell us about your needs and we’ll match the right caregiver.</p>
+      <p>Compassionate, reliable support for your loved one at home.</p>
+      <p style="margin-top:14px;"><a class="btn" href="#request-care">Request Care</a></p>
     </div>
   </header>
 
   <main class="content">
-    <h2>Services we provide</h2>
-    <ul>
-      <li>Personal care (bathing, grooming, toileting)</li>
-      <li>Medication reminders and wellness checks</li>
-      <li>Meal prep, light housekeeping, laundry</li>
-      <li>Mobility/transfer assistance and fall prevention</li>
-      <li>Companionship and transportation to appointments</li>
-    </ul>
+    <!-- Services moved here -->
+    <section>
+      <h2>What we provide</h2>
+      <div class="service-grid" style="margin-top:12px;">
+        <div class="service-card">
+          <h3>Personal Care (HHA/STNA)</h3>
+          <p>Bathing, grooming, dressing, toileting, incontinence care, transfers, mobility and fall-prevention assistance.</p>
+        </div>
+        <div class="service-card">
+          <h3>Companionship & Homemaker</h3>
+          <p>Conversation, safety supervision, meal prep, light housekeeping, laundry, organization, errands.</p>
+        </div>
+        <div class="service-card">
+          <h3>Medication Reminders</h3>
+          <p>Timely reminders, simple logging, and family updates when doses are missed. (No med administration.)</p>
+        </div>
+        <div class="service-card">
+          <h3>Transportation & Appointments</h3>
+          <p>Escort to appointments, shopping, and social visits; assistance in and out of vehicles and buildings.</p>
+        </div>
+        <div class="service-card">
+          <h3>Respite for Family Caregivers</h3>
+          <p>Short-term relief so family can rest, work, or travel while your loved one remains safe at home.</p>
+        </div>
+        <div class="service-card">
+          <h3>Dementia Support</h3>
+          <p>Routine-focused, calming engagement tailored for Alzheimer’s and other dementias.</p>
+        </div>
+        <div class="service-card">
+          <h3>Post-Hospital / Rehab Support</h3>
+          <p>Smoother transitions home: safety setup, routines, follow-ups, and ADL assistance.</p>
+        </div>
+      </div>
+    </section>
 
-    <h2 style="margin-top:24px;">Request care</h2>
+    <section style="margin-top:24px;">
+      <h2>Flexible scheduling</h2>
+      <p>Days, evenings, overnights, and weekends available. We’ll build a schedule around your routines.</p>
+      <div style="margin-top:8px;">
+        <span class="pill">Hourly visits</span>
+        <span class="pill">Daily blocks</span>
+        <span class="pill">Overnights</span>
+        <span class="pill">Short-term respite</span>
+        <span class="pill">Ongoing support</span>
+      </div>
+    </section>
 
-    <!-- Google Form embed ONLY (old email form removed) -->
-    <div class="form-card" style="margin-top:10px;">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfNoTpgi-NnRNJG0yhH-3q2L1SbokfRSi919kfwjYRVNhgTqQ/viewform?embedded=true"
-        width="100%"
-        height="900"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0">
-        Loading…
-      </iframe>
-    </div>
+    <section style="margin-top:24px;">
+      <h2>How it works</h2>
+      <ol style="padding-left:1.1rem;">
+        <li><strong>Quick call or form:</strong> Tell us your needs (<a href="#request-care">Request Care</a>).</li>
+        <li><strong>Care plan:</strong> We confirm goals, schedule, and caregiver match.</li>
+        <li><strong>Start care:</strong> Your caregiver arrives and we check in regularly.</li>
+      </ol>
+      <div class="highlight-box">
+        We serve <strong>Greater Cincinnati</strong>. Visits by appointment only. No in-office walk-ins.
+      </div>
+    </section>
+
+    <section style="margin-top:24px;">
+      <h2>FAQs</h2>
+      <dl class="faq">
+        <dt>Do you accept Medicaid or insurance?</dt>
+        <dd>Private-pay to start. If you have a waiver or plan, let us know and we’ll discuss options.</dd>
+
+        <dt>Is there a minimum visit length?</dt>
+        <dd>Yes, a standard minimum shift applies and will be confirmed during your assessment.</dd>
+
+        <dt>Can the caregiver drive my family member?</dt>
+        <dd>Yes—transport and escort are available by request. We’ll align on safety and reimbursement policies in advance.</dd>
+      </dl>
+    </section>
+
+    <!-- Request Care (Google Form embed preserved) -->
+    <section id="request-care" style="margin-top:24px;">
+      <h2>Request care</h2>
+      <div class="form-card" style="margin-top:10px;">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfNoTpgi-NnRNJG0yhH-3q2L1SbokfRSi919kfwjYRVNhgTqQ/viewform?embedded=true"
+          width="100%"
+          height="900"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </section>
 
   </main>
 
 </body>
 </html>
-
